@@ -15,3 +15,9 @@ allow platform_app hal_dms_default:binder { call transfer };
 get_prop(platform_app, vendor_fp_prop)
 get_prop(platform_app, vendor_display_prop)
 get_prop(platform_app, vendor_audio_prop)
+
+# System Info
+allow platform_app vendor_sysfs_battery_supply:dir search;
+allow platform_app vendor_sysfs_battery_supply:file { getattr open read }; 
+allow platform_app vendor_sysfs_kgsl:dir search;
+allow platform_app vendor_sysfs_kgsl:file { getattr open read };
