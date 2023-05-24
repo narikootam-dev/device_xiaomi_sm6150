@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_spartan.mk
+    $(LOCAL_DIR)/voltage_spartan.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_spartan-user \
-    lineage_spartan-userdebug \
-    lineage_spartan-eng
+    voltage_spartan-user \
+    voltage_spartan-userdebug \
+    voltage_spartan-eng
